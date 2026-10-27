@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python Flashcards Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>
+    <img src="st-logo.png" alt="ST Logo" class="header-logo">
+    Python Flashcards Pro
+</h1>
+
+<div class="progress">
+<div id="progressBar"></div>
+</div>
+
+<div class="card" id="card">
+
+<div class="card-inner">
+
+<div class="front">
+
+<h2 id="question">
+Question
+</h2>
+
+</div>
+
+<div class="back">
+
+<p id="answer">
+Answer
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="controls">
+
+<button onclick="flipCard()">
+<i class="fa-solid fa-eye"></i>
+Show Answer
+</button>
+
+<button onclick="prevCard()">
+<i class="fa-solid fa-arrow-left"></i>
+Prev
+</button>
+
+<button onclick="nextCard()">
+<i class="fa-solid fa-arrow-right"></i>
+Next
+</button>
+
+<button onclick="randomCard()">
+<i class="fa-solid fa-shuffle"></i>
+Random
+</button>
+
+<button onclick="bookmarkCard()">
+<i class="fa-solid fa-star"></i>
+Bookmark
+</button>
+
+</div>
+
+<p id="counter"></p>
+
+<div class="bookmarks">
+
+<h3>⭐ Bookmarked Questions</h3>
+
+<ul id="bookmarkList"></ul>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
